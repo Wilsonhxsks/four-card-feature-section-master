@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    margin: 50px 20px;
+}
+header h4,
+header h2,
+.count h2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+header h4{
+    color: #bcbcbe;
+}
+header h2{
+    color: #4c4c5e;
+    margin-top: -30px;
+}
+header p{
+    text-align: center;
+    font-size: 21px;
+    color: #b4b4b6;
+    font-weight: bold;
+}
+.count p{
+    font-size: 21px;
+    color: #b4b4b6;
+    font-weight: bold;
+}
+.count{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.count h2{
+    color: black;
+}
+.count div{
+    width: 100%;
+    background-color: white;
+    margin: 0px 20px 40px;
+    position: relative;
+    box-shadow: 1px 1px 15px -4px black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.count div::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: green;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.count .one::after{
+    background-color: #5ad0d0;
+}
+.count .two::after{
+    background-color:#db5b5f;
+}
+.count .three::after{
+    background-color: #f4ad56;
+}
+.count .four::after{
+    background-color:#5599e5;
+}
+.count div h2{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+.count div p{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 23px;
+}
+.count div img{
+        margin-left: 300px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+}
+@media (min-width:600px){
+    header p{
+        text-align: center;
+        font-size: 10px;
+        color: #b4b4b6;
+        font-weight: bold;
+        margin-left: 365px;
+        max-width: 306px;
+    }
+    .count{
+        width: 100%;
+        height: 530px;
+        position: relative;
+    }
+    .count div{
+        width: 320px;
+        height: 250px;
+}
+    .count .two{
+        position: absolute;
+        top: 0px;
+        left: 359px;
+    }
+    .count .three{
+        position: absolute;
+        top: 270px;
+        left: 359px;
+    }
+    .count .one{
+        position: absolute;
+        top: 150px;
+        left: 0px;
+    }
+    .count .four{
+        position: absolute;
+        top: 150px;
+        right: 0px;
+    }
+    .count div img{
+       position: absolute;
+        top: 150px;
+        left: -60px;   
+    } 
+}
